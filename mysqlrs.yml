@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: rs-web
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: DB
+  template:
+    metadata:
+      labels:
+        env: pod
+        app: DB
+    spec: 
+      containers:
+        - name: mysql
+          image: docker.io/mysql
+          env:
+              - name: MYSQL_ROOT_PASSWORD
+                value: password 
+
+

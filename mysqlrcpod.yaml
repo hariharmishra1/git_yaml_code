@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: rc-web
+spec:
+  replicas: 4
+  template:
+    metadata:
+      labels:
+        env: dev
+        app: web
+    spec: 
+      containers:
+        - name: nginx
+          image: docker.io/nginx:1.14.2
+        - name: mysql
+          image: docker.io/mysql
+          env:
+              - name: MYSQL_ROOT_PASSWORD
+                value: password 
+
+
