@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
- name: harihar-pod-hnm-nginxdemo
+ name: harihar-pod-hnm-nginx
  labels:
    app: web
 spec:
  containers:
   - name: c1
-    image: quay.io/harihar_mishra/hnm-nginxdemo
+    image: quay.io/harihar_mishra/hnm-nginx
   
