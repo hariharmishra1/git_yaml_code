@@ -4,27 +4,96 @@
     <title>Welcome to My NGINX!</title>
     <style>
         body {
-            background-color: black;
+            background-color: #121212;
             color: white;
             text-align: center;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
         marquee {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
-            color: darkgreen;
+            color: #32CD32;
+            padding: 15px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .welcome-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid white;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #32CD32;
+            color: black;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
         }
     </style>
 </head>
 <body>
 
-    <marquee behavior="scroll" direction="left">Welcome to HNM Container World</marquee>
+    <marquee behavior="scroll" direction="left">🚀 Welcome to HNM Container World! 🚀</marquee>
 
-    <h1>Hello from my Hnmworld server!</h1>
+    <div class="container">
+        <div class="welcome-box">
+            <h1>🌍 Hello from HNM Container World! 🖥️</h1>
+            <p>Explore the power of containerized applications with NGINX.</p>
+        </div>
+
+        <h2>📌 Container Features</h2>
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>🖥️ Web Server</td>
+                <td>NGINX is serving this website inside a container.</td>
+            </tr>
+            <tr>
+                <td>⚡ High Performance</td>
+                <td>Optimized to run efficiently in any environment.</td>
+            </tr>
+            <tr>
+                <td>🌐 Portability</td>
+                <td>Run anywhere: on-premises, cloud, or hybrid setups.</td>
+            </tr>
+        </table>
+
+        <h2>📸 Our Infrastructure</h2>
+        <div class="image-container">
+            <img src="https://source.unsplash.com/featured/?server" alt="Server Image">
+            <img src="https://source.unsplash.com/featured/?cloud" alt="Cloud Infrastructure">
+        </div>
+    </div>
 
 </body>
 </html>
-
-~
-~
 
